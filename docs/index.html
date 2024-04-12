@@ -1,266 +1,265 @@
 <head>
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Кухня: Игра</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-      <style> html {
-        scroll-snap-type: y mandatory; 
-    /*  or proximity */
-       scroll-behavior: smooth;
-    }
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap')
-    .section {
-      scroll-snap-align: start;
-    }
-    </style>
-    
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Кухня: Игра</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <style> html {
+      scroll-snap-type: y mandatory; 
+  /*  or proximity */
+     scroll-behavior: smooth;
+  }
+  .section {
+    scroll-snap-align: start;
+  }
+  </style>
+  
 
-    <!-- начало навбара -->
+  <!-- начало навбара -->
 
-  <nav class="bg-white shadow dark:bg-gray-800 fixed top-0 w-full z-50">
-  <div class="container flex justify-between items-center p-6 mx-auto text-gray-600 dark:text-gray-300">
-    <!-- Левая часть навбара -->
-    <div class="flex items-center flex-grow">
-      <!-- Список ссылок -->
-      <div id="nav-links" class="hidden sm:flex sm:justify-center w-full">
-        <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-gray-800 mx-1.5 sm:mx-6" href="#about">О проекте</a>
-        <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-gray-800 mx-1.5 sm:mx-6" href="#authors">Об авторах</a>
-        <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-gray-800 mx-1.5 sm:mx-6" href="#contacts">Связь с авторами</a>
-        <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-gray-800 mx-1.5 sm:mx-6" href="./kuhnya_game/game.html">Играть</a>
-      </div>
-    </div>
-    <!-- Правая часть навбара -->
-    <div class="flex items-center">
-      <div class="sm:hidden">
-        <!-- Бургер-кнопка -->
-        <button id="burger-menu" class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200">
-          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v1H3V5zm0 6h18v1H3v-1zm0 6h18v1H3v-1z"/>
-          </svg>
-        </button>
-      </div>
+<nav class="bg-white shadow fixed top-0 w-full z-50">
+<div class="container flex justify-between items-center p-6 mx-auto text-gray-600">
+  <!-- Левая часть навбара -->
+  <div class="flex items-center flex-grow">
+    <!-- Список ссылок -->
+    <div id="nav-links" class="hidden sm:flex sm:justify-center w-full">
+      <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-gray-800 mx-1.5 sm:mx-6" href="#about">О проекте</a>
+      <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-gray-800 mx-1.5 sm:mx-6" href="#authors">Об авторах</a>
+      <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-gray-800 mx-1.5 sm:mx-6" href="#contacts">Связь с авторами</a>
+      <a class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform hover:border-gray-800 mx-1.5 sm:mx-6" href="./kuhnya_game/game.html">Играть</a>
     </div>
   </div>
-  <!-- Выпадающее меню -->
-  <div id="dropdown-menu" class="hidden sm:hidden">
-    <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:text-gray-200 dark:hover:text-gray-800" href="#">О проекте</a>
-    <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:text-gray-200 dark:hover:text-gray-800" href="#">Об авторах</a>
-    <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:text-gray-200 dark:hover:text-gray-800" href="#">Поддержать авторов</a>
-    <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 dark:text-gray-200 dark:hover:text-gray-800" href="./kuhnya_game/game.html">Играть</a>
+  <!-- Правая часть навбара -->
+  <div class="flex items-center">
+    <div class="sm:hidden">
+      <!-- Бургер-кнопка -->
+      <button id="burger-menu" class="text-gray-800 transition-colors duration-300 transform">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5h18v1H3V5zm0 6h18v1H3v-1zm0 6h18v1H3v-1z"/>
+        </svg>
+      </button>
+    </div>
   </div>
+</div>
+<!-- Выпадающее меню -->
+<div id="dropdown-menu" class="hidden sm:hidden">
+  <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" href="#">О проекте</a>
+  <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" href="#">Об авторах</a>
+  <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" href="#">Поддержать авторов</a>
+  <a class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" href="./kuhnya_game/game.html">Играть</a>
+</div>
 </nav>
 
 <script>
-  const burgerMenu = document.getElementById('burger-menu');
-  const dropdownMenu = document.getElementById('dropdown-menu');
+const burgerMenu = document.getElementById('burger-menu');
+const dropdownMenu = document.getElementById('dropdown-menu');
 
-  burgerMenu.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('hidden');
-  });
+burgerMenu.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('hidden');
+});
 </script>
 
-  
-  <!-- конец навбара -->
-  
-  
-    
-     <!--   Титульник -->
-     <section id="title" class="bg-gray-800">
-      <!-- Видео на фон -->
-      <video autoplay loop muted class="absolute bg-fixed top-0 left-0 min-w-full min-h-full object-cover z-0">
-        <source src="./mp4/kkk.mp4" type="video/mp4">
-        <!-- Альтернативное содержимое для пользователей, которые не могут просматривать видео -->
-        Your browser does not support the video tag.
-      </video>
-  
-    
-      <!-- Содержимое секции -->
-      <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center content relative z-10">
-        <div class="mx-auto max-w-xl text-center text-white">
-          <h1 class="text-3xl font-extrabold sm:text-5xl">
-            <strong class="font-extrabold text-white sm:block">
-              <span id="_text_content">Визуальная новелла по мотивам сериала "Кухня"</span>
-            </strong>
-          </h1>
-          <p class="mt-4 sm:text-xl/relaxed">
-            <span id="_text_content">Ощутите на себе день из жизни любимых персонажей</span>
-          </p>
-          <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <a class="block w-full rounded bg-white outline outline-white px-12 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-transparent hover:text-white hover:outline sm:w-auto" href="./kuhnya_game/game.html">
-              <span id="_text_content">Начать игру</span>
-            </a>
-            <a class="block w-full rounded px-12 py-3 text-sm font-medium outline text-white hover:bg-white transition-colors hover:text-gray-800 hover:outline-white focus:ring active:outline sm:w-auto" href="#about">
-              <span id="_text_content">Узнать больше</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!--   Конец титульника -->
-      
-    <!--   о проекте -->
-      <section id="about">
-    <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-    <div class="relative z-10 lg:py-16">
-    <div class="relative h-64 sm:h-80 lg:h-full">
-    <img alt="image" class="absolute inset-0 h-full w-full object-cover" src="./img/outside.png"/>
-    </div>
-    </div>
-    <div class="relative flex items-center bg-gray-100">
-    <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100">
-    </span>
-    <div class="p-8 sm:p-16 lg:p-24">
-    <h2 class="text-2xl font-bold sm:text-3xl">
-    <span id="_text_content">Что это за проект?</span>
-    </h2>
-    <p class="mt-4 text-gray-600">
-    <span id="_text_content">Изначально у нас была идея создать любую новеллу в браузере, используя JavaScript в рамках университетского проекта. Так как вся наша команда является фанатами легендарного сериала "Кухня", выбор сеттинга не заставил себя долго ждать. </p>
-      <p class="mt-4 text-gray-600"> Пока что игра находится в раннем доступе, но уже сейчас можно получить общее представление о будущем проекте. Игроку будет предложено прожить день из жизни Максима Лаврова, принимая решения, у которых будут свои последствия.</span>
-    </p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <!--  Конец о проекте -->
-    
-    <!-- Авторы -->
-    <section id="authors" class="bg-white dark:bg-gray-900">
-      <div class="container px-6 py-10 mx-auto">
-        <div class="xl:flex xl:items-center xL:-mx-4">
-          <div class="xl:w-1/2 xl:mx-4">
-            <h1 class="text-2xl font-semibold text-gray-800  lg:text-3xl dark:text-white">Наша команда</h1>
-            <p class="max-w-2xl mt-4 text-gray-500 dark:text-gray-300">Мы - студенты 3 курса и как уже было упомянуто выше - фанаты сериала "Кухня". В нашем составе собрались два художника, сценарист и разработчик. Для всех нас это первый опыт не только в создании игр, но и в веб-разработке целом. </p>
-            <p class="max-w-2xl mt-4 text-gray-500 dark:text-gray-300"> Несмотря на нашу неопытность, мы горим идеей сделать игру по мотивам нашей любимой вселенной, чтобы такие же фанаты, как и мы, могли еще раз прикоснуться к прекрасному. Наша идея - "От фанатов для фанатов" </p>
-          </div>
-          <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
-            <div>
-              <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/danislaw.jpeg"/>
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700  dark:text-white">Данислав Синеев</h1>
-              <p class="mt-2 text-gray-500 dark:text-gray-300">Художник-иллюстратор</p>
-            </div>
-            <div>
-              <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/irene.jpeg"/>
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 dark:text-white">Ирина Очкина</h1>
-              <p class="mt-2 text-gray-500 dark:text-gray-300">Сценарист</p>
-            </div>
-            <!-- Добавленные карточки -->
-            <div>
-              <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/julia.jpeg"/>
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 dark:text-white">Юлия Сорокина</h1>
-              <p class="mt-2 text-gray-500 dark:text-gray-300">Художник-иллюстратор </p>
-            </div>
-            <div>
-              <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/nikita.jpeg"/>
-              <h1 class="mt-4 text-2xl font-semibold text-gray-700 dark:text-white">Никита Петрушенко</h1>
-              <p class="mt-2 text-gray-500 dark:text-gray-300">Разработчик</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>    
-          <!--   Конец секции авторов -->
-          <!-- Начало доп - промоушена -->
-      <section class="overflow-hidden bg-gray-50 dark:bg-gray-900 sm:grid sm:grid-cols-2 sm:items-center">
-      <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
-      <span id="_text_content">Попробуйте игру уже сейчас</span>
-      </h2>
-      <p class="hidden text-gray-500 dark:text-gray-400 md:mt-4 md:block">
-      <span id="_text_content">Уже сейчас для ознакомления доступа малая часть игры. Это пре-альфа версия, поэтому большая часть новеллы в дальнейшем будет доработана и переработана.</span>
-      </p>
-      <div class="mt-4 md:mt-8">
-      <a class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400" href="#">
-      <span id="_text_content">Попробовать игру</span>
-      </a>
-      </div>
-      </div>
-      </div>
-      <img alt="" class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]" src="./img/promo1.png"/>
-      </section>
-      <!-- Конец доп - промоушена -->
-    <!--   Конец секции авторов -->
-    
-    <!--   связь -->
-    <section id="contacts" class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Свяжитесь с нами</h2>
-                <p class="text-lg text-gray-600">Фидбек очень важен для нас. Мы будем рады ответить на все ваши вопросы и предложения!</p>
-            </div>
-    
-            <div class="flex flex-wrap justify-center -mx-2">
-                <form class="w-full max-w-lg px-2 mb-4" x-data="{name: '', email: '', message: ''}" @submit.prevent="console.log({name, email, message})">
-                    <div class="flex flex-wrap mb-6 -mx-3">
-                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
-                                Имя
-                            </label>
-                            <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Максим Лавров" x-model="name">
-                        </div>
-                        <div class="w-full md:w-1/2 px-3">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
-                                Email
-                            </label>
-                            <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="oguzok@claudemonet.com" x-model="email">
-                        </div>
-                    </div>
-                    <div class="mb-6 px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
-                            Сообщение
-                        </label>
-                        <textarea class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 h-48 focus:outline-none focus:bg-white focus:border-gray-500" id="message" placeholder="Введите ваше сообщение..." x-model="message"></textarea>
-                    </div>
-                    <div class="flex items-center justify-between px-3">
-                        <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                            Отправить
-                        </button>
-                    </div>
-                </form>
-            </div>
-    
-            <div class="flex justify-center space-x-4 mt-6">
-                <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-github fa-2x"></i></a>
-                <a href="mailto:mulberr@list.ru" class="text-red-500 hover:text-red-700"><i class="fas fa-envelope fa-2x"></i></a>
-            </div>
-        </div>
-    </section>
-    <!--   конец связи -->
-    <!-- донаты -->
-      <section id="support" class="bg-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-semibold mb-4">Поддержать проект</h2>
-                <p class="text-lg text-gray-600">Если вы заинтересованы в проекте и хотите поддержать его материально, то вы можете это сделать следующими способами: </p>
-            </div>
-    
-            <div class="flex flex-wrap justify-center space-x-6">
-                <a href="https://www.patreon.com" target="_blank" class="text-green-500 hover:text-green-700 transition-colors duration-300">
-                    <i class="fab fa-patreon fa-2x"></i>
-                    <p>Прямой перевод</p>
-                </a>
-                <a href="https://www.buymeacoffee.com" target="_blank" class="text-yellow-500 hover:text-yellow-700 transition-colors duration-300">
-                    <i class="fas fa-coffee fa-2x"></i>
-                    <p>Boosty</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- конец донатов -->
 
-    <footer class="bg-gray-100 text-gray-400 text-sm text-center py-4">
-      <p>©2024 </p>
-    </footer>
-      
-    </body>
-    </html>
+<!-- конец навбара -->
+
+
+  
+   <!--   Титульник -->
+   <section id="title" class="bg-gray-800">
+    <!-- Видео на фон -->
+    <video autoplay loop muted class="absolute bg-fixed top-0 left-0 min-w-full min-h-full object-cover z-0">
+      <source src="./mp4/kkk.mp4" type="video/mp4">
+      <!-- Альтернативное содержимое для пользователей, которые не могут просматривать видео -->
+      Your browser does not support the video tag.
+    </video>
+
+  
+    <!-- Содержимое секции -->
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center content relative z-10">
+      <div class="mx-auto max-w-xl text-center text-white">
+        <h1 class="text-3xl font-extrabold sm:text-5xl">
+          <strong class="font-extrabold text-white sm:block">
+            <span id="_text_content">Визуальная новелла по мотивам сериала "Кухня"</span>
+          </strong>
+        </h1>
+        <p class="mt-4 sm:text-xl/relaxed">
+          <span id="_text_content">Ощутите на себе день из жизни любимых персонажей</span>
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a class="block w-full rounded bg-white outline outline-white px-12 py-3 text-sm font-medium text-gray-800 transition-colors hover:bg-transparent hover:text-white hover:outline sm:w-auto" href="./kuhnya_game/game.html">
+            <span id="_text_content">Начать игру</span>
+          </a>
+          <a class="block w-full rounded px-12 py-3 text-sm font-medium outline text-white hover:bg-white transition-colors hover:text-gray-800 hover:outline-white focus:ring active:outline sm:w-auto" href="#about">
+            <span id="_text_content">Узнать больше</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--   Конец титульника -->
     
+  <!--   о проекте -->
+    <section id="about">
+  <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+  <div class="relative z-10 lg:py-16">
+  <div class="relative h-64 sm:h-80 lg:h-full">
+  <img alt="image" class="absolute inset-0 h-full w-full object-cover" src="./img/outside.png"/>
+  </div>
+  </div>
+  <div class="relative flex items-center bg-gray-100">
+  <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100">
+  </span>
+  <div class="p-8 sm:p-16 lg:p-24">
+  <h2 class="text-2xl font-bold sm:text-3xl">
+  <span id="_text_content">Что это за проект?</span>
+  </h2>
+  <p class="mt-4 text-gray-600">
+  <span id="_text_content">Изначально у нас была идея создать любую новеллу в браузере, используя JavaScript в рамках университетского проекта. Так как вся наша команда является фанатами легендарного сериала "Кухня", выбор сеттинга не заставил себя долго ждать. </p>
+    <p class="mt-4 text-gray-600"> Пока что игра находится в раннем доступе, но уже сейчас можно получить общее представление о будущем проекте. Игроку будет предложено прожить день из жизни Максима Лаврова, принимая решения, у которых будут свои последствия.</span>
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!--  Конец о проекте -->
+  
+  <!-- Авторы -->
+  <section id="authors" class="bg-white">
+    <div class="container px-6 py-10 mx-auto">
+      <div class="xl:flex xl:items-center xL:-mx-4">
+        <div class="xl:w-1/2 xl:mx-4">
+          <h1 class="text-2xl font-semibold text-gray-800  lg:text-3xl">Наша команда</h1>
+          <p class="max-w-2xl mt-4 text-gray-500">Мы - студенты 3 курса и как уже было упомянуто выше - фанаты сериала "Кухня". В нашем составе собрались два художника, сценарист и разработчик. Для всех нас это первый опыт не только в создании игр, но и в веб-разработке целом. </p>
+          <p class="max-w-2xl mt-4 text-gray-500"> Несмотря на нашу неопытность, мы горим идеей сделать игру по мотивам нашей любимой вселенной, чтобы такие же фанаты, как и мы, могли еще раз прикоснуться к прекрасному. Наша идея - "От фанатов для фанатов" </p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
+          <div>
+            <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/danislaw.jpeg"/>
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700">Данислав Синеев</h1>
+            <p class="mt-2 text-gray-500">Художник-иллюстратор</p>
+          </div>
+          <div>
+            <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/irene.jpeg"/>
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700">Ирина Очкина</h1>
+            <p class="mt-2 text-gray-500">Сценарист</p>
+          </div>
+          <!-- Добавленные карточки -->
+          <div>
+            <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/julia.jpeg"/>
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700">Юлия Сорокина</h1>
+            <p class="mt-2 text-gray-500">Художник-иллюстратор </p>
+          </div>
+          <div>
+            <img alt="" class="object-cover rounded-xl aspect-square" src="./img/authors/nikita.jpeg"/>
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700">Никита Петрушенко</h1>
+            <p class="mt-2 text-gray-500">Разработчик</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
+        <!--   Конец секции авторов -->
+        <!-- Начало доп - промоушена -->
+    <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
+    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+    <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+    <span id="_text_content">Попробуйте игру уже сейчас</span>
+    </h2>
+    <p class="hidden text-gray-500 md:mt-4 md:block">
+    <span id="_text_content">Уже сейчас для ознакомления доступа малая часть игры. Это пре-альфа версия, поэтому большая часть новеллы в дальнейшем будет доработана и переработана.</span>
+    </p>
+    <div class="mt-4 md:mt-8">
+    <a class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400" href="#">
+    <span id="_text_content">Попробовать игру</span>
+    </a>
+    </div>
+    </div>
+    </div>
+    <img alt="" class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]" src="./img/promo1.png"/>
+    </section>
+    <!-- Конец доп - промоушена -->
+  <!--   Конец секции авторов -->
+  
+  <!--   связь -->
+  <section id="contacts" class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+          <div class="mb-8 text-center">
+              <h2 class="text-3xl font-semibold mb-4">Свяжитесь с нами</h2>
+              <p class="text-lg text-gray-600">Фидбек очень важен для нас. Мы будем рады ответить на все ваши вопросы и предложения!</p>
+          </div>
+  
+          <div class="flex flex-wrap justify-center -mx-2">
+              <form class="w-full max-w-lg px-2 mb-4" x-data="{name: '', email: '', message: ''}" @submit.prevent="console.log({name, email, message})">
+                  <div class="flex flex-wrap mb-6 -mx-3">
+                      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                              Имя
+                          </label>
+                          <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Максим Лавров" x-model="name">
+                      </div>
+                      <div class="w-full md:w-1/2 px-3">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                              Email
+                          </label>
+                          <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="oguzok@claudemonet.com" x-model="email">
+                      </div>
+                  </div>
+                  <div class="mb-6 px-3">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                          Сообщение
+                      </label>
+                      <textarea class="appearance-none block w-full bg-white text-gray-700 border border-gray-300 rounded py-3 px-4 mb-3 h-48 focus:outline-none focus:bg-white focus:border-gray-500" id="message" placeholder="Введите ваше сообщение..." x-model="message"></textarea>
+                  </div>
+                  <div class="flex items-center justify-between px-3">
+                      <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                          Отправить
+                      </button>
+                  </div>
+              </form>
+          </div>
+  
+          <div class="flex justify-center space-x-4 mt-6">
+              <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fab fa-github fa-2x"></i></a>
+              <a href="mailto:mulberr@list.ru" class="text-red-500 hover:text-red-700"><i class="fas fa-envelope fa-2x"></i></a>
+          </div>
+      </div>
+  </section>
+  <!--   конец связи -->
+  <!-- донаты -->
+    <section id="support" class="bg-white py-12">
+      <div class="container mx-auto px-4">
+          <div class="mb-8 text-center">
+              <h2 class="text-3xl font-semibold mb-4">Поддержать проект</h2>
+              <p class="text-lg text-gray-600">Если вы заинтересованы в проекте и хотите поддержать его материально, то вы можете это сделать следующими способами: </p>
+          </div>
+  
+          <div class="flex flex-wrap justify-center space-x-6">
+              <a href="https://www.patreon.com" target="_blank" class="text-green-500 hover:text-green-700 transition-colors duration-300">
+                  <i class="fab fa-patreon fa-2x"></i>
+                  <p>Прямой перевод</p>
+              </a>
+              <a href="https://www.buymeacoffee.com" target="_blank" class="text-yellow-500 hover:text-yellow-700 transition-colors duration-300">
+                  <i class="fas fa-coffee fa-2x"></i>
+                  <p>Boosty</p>
+              </a>
+          </div>
+      </div>
+  </section>
+  <!-- конец донатов -->
+
+  <footer class="bg-gray-100 text-gray-400 text-sm text-center py-4">
+    <p>©2024 </p>
+  </footer>
+    
+  </body>
+  </html>
+  
 
